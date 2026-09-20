@@ -294,16 +294,17 @@ p:last-child {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.15rem;
 }
 
 .nav-link {
   font-weight: 600;
-  font-size: 0.925rem;
+  font-size: 0.86rem;
   color: var(--dark-800);
   padding: 0.5rem 0;
   position: relative;
   transition: color var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -1529,34 +1530,137 @@ p:last-child {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN (BREAKPOINTS)
+   PIPELINE, VARIABLES & DIVISION UTILITIES
    ========================================================================== */
-@media (max-width: 1024px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .divisions-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .compliance-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
+.pipeline-step {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.25rem;
+  position: relative;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.pipeline-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-cyan);
+}
+
+.pipeline-num {
+  width: 36px;
+  height: 36px;
+  background: var(--secondary-light);
+  color: var(--secondary);
+  font-weight: 800;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.pipeline-step h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-950);
+}
+
+.pipeline-step p {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  line-height: 1.45;
+}
+
+.variables-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.variable-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.variable-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.variable-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.variable-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.variable-card h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  color: var(--dark-950);
+}
+
+.variable-card p {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  line-height: 1.45;
+}
+
+.security-box {
+  background: rgba(15, 23, 42, 0.03);
+  border: 1px solid var(--gray-300);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.arauterm-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(193, 48, 58, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(193, 48, 58, 0.25);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (BREAKPOINTS)
+   ========================================================================== */
+@media (max-width: 1080px) {
   .topbar {
     display: none;
   }
@@ -1598,6 +1702,39 @@ p:last-child {
     background: transparent;
   }
 
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .divisions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .compliance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .pipeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .variables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
   .hero {
     padding: 4rem 0 3.5rem;
   }
@@ -1635,6 +1772,14 @@ p:last-child {
 
   .section-title {
     font-size: 1.85rem;
+  }
+
+  .pipeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .variables-grid {
+    grid-template-columns: 1fr;
   }
 
   .whatsapp-floating span {

@@ -171,4 +171,32 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // 6. Preselect form options from URL parameters (?servicio= o ?equipo=)
+  const servicioSelect = document.getElementById('servicio');
+  if (servicioSelect) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const paramVal = urlParams.get('servicio') || urlParams.get('equipo');
+    if (paramVal) {
+      const normalizedParam = paramVal.toLowerCase().replace(/[-_]/g, ' ');
+      for (let i = 0; i < servicioSelect.options.length; i++) {
+        const opt = servicioSelect.options[i];
+        const optText = opt.text.toLowerCase();
+        const optVal = opt.value.toLowerCase();
+        if (optVal.includes(normalizedParam) || optText.includes(normalizedParam) || 
+            (normalizedParam.includes('caldera') && optVal.includes('caldera')) ||
+            (normalizedParam.includes('vapor') && (optVal.includes('vapor') || optVal.includes('caldera'))) ||
+            (normalizedParam.includes('biomasa') && optVal.includes('biomasa')) ||
+            (normalizedParam.includes('fluido') && optVal.includes('fluido')) ||
+            (normalizedParam.includes('agua caliente') && optVal.includes('agua caliente')) ||
+            (normalizedParam.includes('automatizacion') && optVal.includes('automatizacion')) ||
+            (normalizedParam.includes('iot') && optVal.includes('iot')) ||
+            (normalizedParam.includes('sensor') && optVal.includes('sensor')) ||
+            (normalizedParam.includes('tablero') && optVal.includes('tablero'))) {
+          servicioSelect.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  }
 });

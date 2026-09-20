@@ -20,3 +20,4 @@ Thumbs.db
 *.log
 .gemini/
 __pycache__/
+tmp/

@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "estado": "propuesta-no-implementada",
+  "nuevas_paginas": [
+    {
+      "ruta": "calderas-vapor.html",
+      "menu": "Calderas & Vapor",
+      "titulo": "Calderas, vapor y soluciones térmicas industriales",
+      "badge": "Representantes de Arauterm en Bolivia",
+      "secciones": [
+        "calderas-de-vapor",
+        "calderas-de-biomasa",
+        "fluido-termico",
+        "agua-caliente",
+        "vapor-y-condensado",
+        "accesorios",
+        "proyectos-especiales",
+        "integracion-y-monitoreo"
+      ]
+    },
+    {
+      "ruta": "automatizacion-iot.html",
+      "menu": "Automatización & IoT",
+      "titulo": "Del sensor a la decisión",
+      "secciones": [
+        "automatizacion-industrial",
+        "tableros-electricos",
+        "sensores-e-instrumentacion",
+        "red-y-gateway",
+        "plataforma-y-dashboard",
+        "alertas-moviles",
+        "aplicaciones",
+        "metodologia"
+      ]
+    }
+  ],
+  "contacto_principal": {
+    "marca": "WIP",
+    "whatsapp": "+591 70057895",
+    "email": "comercial@wipbolivia.com",
+    "nota": "No sustituir sin aprobación del usuario"
+  },
+  "afirmaciones_restringidas": [
+    "No afirmar exclusividad de la representación Arauterm",
+    "No presentar modelos IoT como stock confirmado",
+    "No afirmar que IoT reemplaza protecciones o enclavamientos",
+    "No mezclar códigos WIP-CHL/WIP-CHG con modelos CVS/AFT/GAQ de Arauterm"
+  ]
+}

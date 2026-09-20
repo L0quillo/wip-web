@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatización, Tableros y Monitoreo Industrial IoT | WIP Bolivia</title>
+  <meta name="description" content="Automatización industrial, tableros eléctricos, instrumentación, sensores alámbricos e inalámbricos, dashboards, históricos y alertas móviles en Bolivia.">
+  <link rel="icon" type="image/png" href="assets/img/1._logo_wip.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <span class="topbar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          comercial@wipbolivia.com
+        </span>
+        <span class="topbar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+          Ingeniería de Automatización & IoT
+        </span>
+      </div>
+      <div class="topbar-links">
+        <span class="topbar-badge" style="background: rgba(14, 165, 233, 0.2); color: #38BDF8; border-color: rgba(14, 165, 233, 0.3);">Telemetría & Control Industrial</span>
+        <a href="https://wa.me/59170057895?text=Hola%20WIP,%20solicito%20asesoramiento%20para%20Automatizacion%20e%20IoT" target="_blank" class="topbar-item">WhatsApp Directo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/img/LOGO_WIP-01.png" alt="WIP Soluciones Integrales">
+      </a>
+
+      <!-- Navigation -->
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        
+        <div class="nav-dropdown">
+          <a href="tratamiento-agua.html" class="nav-link nav-dropdown-toggle">
+            Tratamiento de Agua
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="tratamiento-agua.html#plantas" class="dropdown-item">Plantas PPA, PDA-I y PTAR</a>
+            <a href="tratamiento-agua.html#purificacion" class="dropdown-item">Ósmosis Inversa y Desmineralizadores</a>
+            <a href="tratamiento-agua.html#filtracion" class="dropdown-item">Ablandadores y Filtros Multimedia</a>
+            <a href="tratamiento-agua.html#desinfeccion" class="dropdown-item">Esterilización UV y Ozono</a>
+            <a href="tratamiento-agua.html#consumibles" class="dropdown-item">Carcasas y Cartuchos Filtrantes</a>
+          </div>
+        </div>
+
+        <a href="filtros-metalicos.html" class="nav-link">Filtros Metálicos</a>
+
+        <div class="nav-dropdown">
+          <a href="calderas-vapor.html" class="nav-link nav-dropdown-toggle">
+            Calderas & Vapor
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="calderas-vapor.html#vapor" class="dropdown-item">Calderas de Vapor</a>
+            <a href="calderas-vapor.html#biomasa" class="dropdown-item">Calderas de Biomasa</a>
+            <a href="calderas-vapor.html#fluido-termico" class="dropdown-item">Calentadores de Fluido Térmico</a>
+            <a href="calderas-vapor.html#agua-caliente" class="dropdown-item">Generadores de Agua Caliente</a>
+            <a href="calderas-vapor.html#instalaciones" class="dropdown-item">Instalaciones de Vapor y Condensado</a>
+            <a href="calderas-vapor.html#accesorios" class="dropdown-item">Accesorios y Proyectos Especiales</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a href="automatizacion-iot.html" class="nav-link active nav-dropdown-toggle">
+            Automatización & IoT
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="automatizacion-iot.html#automatizacion" class="dropdown-item">Automatización Industrial</a>
+            <a href="automatizacion-iot.html#tableros" class="dropdown-item">Tableros Eléctricos y de Control</a>
+            <a href="automatizacion-iot.html#sensores" class="dropdown-item">Instrumentación y Sensores</a>
+            <a href="automatizacion-iot.html#monitoreo" class="dropdown-item">Monitoreo Industrial IoT</a>
+            <a href="automatizacion-iot.html#plataforma" class="dropdown-item">Dashboards, Históricos y Alertas</a>
+          </div>
+        </div>
+
+        <a href="servicios.html" class="nav-link">Ingeniería & Montajes</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contacto.html" class="btn btn-primary btn-sm">Solicitar Cotización</a>
+        <button class="btn-mobile-toggle" id="mobileToggle" aria-label="Abrir Menú">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner Hero -->
+  <section class="page-hero bg-pattern-grid">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Inicio</a> &gt; <span class="current">Automatización & IoT</span>
+      </div>
+      <div style="margin-bottom: 0.85rem;">
+        <span class="badge" style="background: rgba(14, 165, 233, 0.2); color: #38BDF8; border: 1px solid rgba(14, 165, 233, 0.3); padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+          Automatización, Instrumentación y Datos
+        </span>
+      </div>
+      <h1 class="page-hero-title">Del Sensor a la Decisión: Automatización & IoT</h1>
+      <p class="page-hero-desc">
+        Integramos instrumentos de campo, tableros de control, conectividad de largo alcance y plataformas de supervisión para convertir las variables críticas de su proceso en información útil, oportuna y accionable.
+      </p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.75rem;">
+        <a href="contacto.html?servicio=Automatizacion-IoT" class="btn btn-primary">Solicitar Relevamiento Técnico</a>
+        <a href="#arquitectura" class="btn btn-outline-white">Conocer la Arquitectura</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Tres Pilares -->
+  <section class="section-py bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Pilares Tecnológicos</span>
+        <h2 class="section-title">Ingeniería de Control, Fuerza y Telemetría</h2>
+        <p class="section-desc">
+          Un ecosistema integrado que conecta la maquinaria física con el control automático y el análisis de datos en tiempo real.
+        </p>
+      </div>
+
+      <div class="divisions-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+        
+        <!-- Pilar 1: Automatización -->
+        <div class="division-card" id="automatizacion">
+          <div class="division-body">
+            <span class="section-badge">Control de Procesos</span>
+            <h3 class="division-title">Automatización Industrial</h3>
+            <p class="division-desc">
+              Ingeniería e integración de control para equipos, plantas de tratamiento y líneas de producción. Programación de PLC, variadores de frecuencia (VFD) y pantallas HMI definidos según criticidad, secuencia y seguridad de operación.
+            </p>
+            <div class="division-features">
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Control secuencial y lazos PID
+              </div>
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Enclavamientos y paradas de emergencia
+              </div>
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Integración con SCADA y HMI táctiles
+              </div>
+            </div>
+            <a href="contacto.html?servicio=Automatizacion-Industrial" class="btn btn-secondary btn-sm" style="margin-top: auto;">Consultar Automatización</a>
+          </div>
+        </div>
+
+        <!-- Pilar 2: Tableros -->
+        <div class="division-card" id="tableros">
+          <div class="division-body">
+            <span class="section-badge">Potencia & Maniobra</span>
+            <h3 class="division-title">Tableros Eléctricos & de Control</h3>
+            <p class="division-desc">
+              Diseño, armado e instalación de tableros eléctricos para distribución de fuerza, arrancadores de motores, bancos de condensadores y gabinetes de instrumentación con protecciones termomagnéticas y sobretensión seleccionadas para planta.
+            </p>
+            <div class="division-features">
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Gabinetes IP55 / IP65 y NEMA
+              </div>
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Componentes de primeras marcas
+              </div>
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Rotulación y planos unifilares
+              </div>
+            </div>
+            <a href="contacto.html?servicio=Tableros-Electricos" class="btn btn-secondary btn-sm" style="margin-top: auto;">Consultar Tableros</a>
+          </div>
+        </div>
+
+        <!-- Pilar 3: Sensores e IoT -->
+        <div class="division-card" id="sensores">
+          <div class="division-body">
+            <span class="section-badge">Telemetría Inalámbrica</span>
+            <h3 class="division-title">Sensores & Monitoreo IoT</h3>
+            <p class="division-desc">
+              Sistemas de sensores alámbricos e inalámbricos (LoRaWAN / Celular) para supervisar presión, temperatura, caudal, nivel, calidad de agua (pH, ORP, conductividad) y consumo energético en tiempo real con dashboards y alarmas.
+            </p>
+            <div class="division-features">
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Batería de larga duración (hasta 5-10 años)
+              </div>
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Cobertura extendida sin cableado costoso
+              </div>
+              <div class="division-feature-item">
+                <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Dashboards en la nube y notificaciones móviles
+              </div>
+            </div>
+            <a href="contacto.html?servicio=Sensores-IoT" class="btn btn-secondary btn-sm" style="margin-top: auto;">Consultar Monitoreo IoT</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Arquitectura en 5 Etapas -->
+  <section class="section-py" id="arquitectura">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Flujo de Datos Extremo a Extremo</span>
+        <h2 class="section-title">Arquitectura de la Solución IoT</h2>
+        <p class="section-desc">Cómo transformamos señales físicas en decisiones operativas claras y alertas automáticas.</p>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <img src="assets/img/automatizacion-iot/WEBSERVI-DIAGRAMA-FLUJO-DATOS.jpeg" alt="Diagrama de flujo de datos IoT" style="max-width: 800px; margin: 0 auto; border-radius: var(--radius-lg); border: 1px solid var(--gray-200); box-shadow: var(--shadow-md);">
+      </div>
+
+      <div class="pipeline-grid">
+        
+        <div class="pipeline-step">
+          <div class="pipeline-num">1</div>
+          <h4>Sensores & Transmisores</h4>
+          <p>Captura de presión, temperatura, caudal, nivel, pH, ORP y conductividad con sondas calibradas.</p>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="pipeline-num">2</div>
+          <h4>Interfaz de Campo</h4>
+          <p>Adaptación e integración de señales 4-20 mA, RTD/PT100, 0-10 V o buses industriales RS485/Modbus.</p>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="pipeline-num">3</div>
+          <h4>Red & Gateway</h4>
+          <p>Transmisión inalámbrica LoRaWAN de largo alcance, enlaces Ethernet o red celular con alta inmunidad al ruido.</p>
+        </div>
+
+        <div class="pipeline-step" id="plataforma">
+          <div class="pipeline-num">4</div>
+          <h4>Plataforma & Dashboards</h4>
+          <p>Almacenamiento de históricos, gráficos de tendencias, reportes automáticos y APIs para integración con SCADA.</p>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="pipeline-num">5</div>
+          <h4>Alertas & Notificaciones</h4>
+          <p>Avisos instantáneos por WhatsApp, email o SMS ante superación de umbrales críticos o desvíos de proceso.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Variables Críticas de Proceso -->
+  <section class="section-py bg-light" id="monitoreo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Parámetros Medibles</span>
+        <h2 class="section-title">Variables Críticas que Hacemos Visibles</h2>
+        <p class="section-desc">Supervise continuamente las variables térmicas, hidráulicas y fisicoquímicas que definen la eficiencia de su planta.</p>
+      </div>
+
+      <div class="variables-grid">
+        
+        <div class="variable-card">
+          <div class="variable-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h4>Presión de Vapor & Fluidos</h4>
+          <p>Presión en colectores de caldera, estaciones PRV, redes de aire comprimido y tuberías de proceso.</p>
+        </div>
+
+        <div class="variable-card">
+          <div class="variable-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h4>Temperatura de Proceso</h4>
+          <p>Líneas de vapor, retorno de condensado, calentadores de fluido térmico, reactores y cámaras frías.</p>
+        </div>
+
+        <div class="variable-card">
+          <div class="variable-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <h4>Caudal & Consumo</h4>
+          <p>Medición de flujo de vapor, agua de alimentación, combustible y efluentes para control de costos.</p>
+        </div>
+
+        <div class="variable-card">
+          <div class="variable-icon">
+            <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg>
+          </div>
+          <h4>pH & Potencial Redox (ORP)</h4>
+          <p>Control de acidez/alcalinidad y capacidad desinfectante en plantas de potabilización (PPA) y PTAR.</p>
+        </div>
+
+        <div class="variable-card">
+          <div class="variable-icon">
+            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+          </div>
+          <h4>Conductividad Eléctrica & TDS</h4>
+          <p>Supervisión de pureza de agua en ósmosis inversa, purgas de caldera y desmineralizadores SDA.</p>
+        </div>
+
+        <div class="variable-card">
+          <div class="variable-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h4>Nivel & Parámetros Eléctricos</h4>
+          <p>Nivel en tanques de almacenamiento, consumo eléctrico (kW/h), corriente de bombas y estado de relés.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Aplicaciones Industriales -->
+  <section class="section-py">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Casos de Uso</span>
+        <h2 class="section-title">Aplicaciones de Automatización & IoT</h2>
+        <p class="section-desc">Soluciones probadas en instalaciones térmicas, plantas de agua y líneas industriales.</p>
+      </div>
+
+      <div class="hero-grid" style="align-items: center; gap: 3rem; margin-bottom: 4rem;" id="calderas">
+        <div>
+          <span class="section-badge">Aplicación Térmica</span>
+          <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--dark-950);">Calderas de Vapor & Circuitos Térmicos</h3>
+          <p>
+            Monitoreo continuo de presión de vapor en distribuidores, temperatura del condensado retornado, calidad del agua de alimentación (conductividad y pH) y estado de bombas dosificadoras.
+          </p>
+          <div class="hero-card-list" style="margin-bottom: 1.5rem;">
+            <div class="hero-feature-item">
+              <div class="hero-feature-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <div class="hero-feature-content">
+                <h4 style="color: var(--dark-950);">Detección Temprana de Fugas de Vapor</h4>
+                <p>Alertas ante caídas anómalas de presión o incremento en temperatura de retorno.</p>
+              </div>
+            </div>
+            <div class="hero-feature-item">
+              <div class="hero-feature-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <div class="hero-feature-content">
+                <h4 style="color: var(--dark-950);">Control de Purgas & Sarro</h4>
+                <p>Monitoreo de conductividad para optimizar los ciclos de purga sin desperdiciar calor.</p>
+              </div>
+            </div>
+          </div>
+          <a href="calderas-vapor.html" class="btn btn-secondary btn-sm">Ver Calderas & Vapor &rarr;</a>
+        </div>
+        <div>
+          <img src="assets/img/automatizacion-iot/WEBSERVI-SENSOR-PRESION-01.jpeg" alt="Sensor de presión en tubería" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); border: 1px solid var(--gray-200); width: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <div class="hero-grid" style="align-items: center; gap: 3rem;" id="agua">
+        <div style="order: 2;">
+          <span class="section-badge">Aplicación Hídrica</span>
+          <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--dark-950);">Plantas de Tratamiento de Agua & Efluentes</h3>
+          <p>
+            Supervisión continua de calidad de agua potable (Norma NB 512) y descarga de efluentes (Ley 1333): pH, turbidez, ORP para dosificación de cloro, conductividad en permeado de ósmosis y niveles de tanque.
+          </p>
+          <div class="hero-card-list" style="margin-bottom: 1.5rem;">
+            <div class="hero-feature-item">
+              <div class="hero-feature-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <div class="hero-feature-content">
+                <h4 style="color: var(--dark-950);">Registro Automático de Parámetros</h4>
+                <p>Históricos digitales listos para auditorías ambientales y reportes de calidad.</p>
+              </div>
+            </div>
+            <div class="hero-feature-item">
+              <div class="hero-feature-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <div class="hero-feature-content">
+                <h4 style="color: var(--dark-950);">Dosificación Automática en Lazo Cerrado</h4>
+                <p>Control preciso de bombas dosificadoras de coagulante, hipoclorito y antiincrustante.</p>
+              </div>
+            </div>
+          </div>
+          <a href="tratamiento-agua.html" class="btn btn-secondary btn-sm">Ver Tratamiento de Agua &rarr;</a>
+        </div>
+        <div style="order: 1;">
+          <img src="assets/img/automatizacion-iot/WEBSERVI-SENSOR-CALIDAD-AGUA-01.jpeg" alt="Sensor de calidad de agua pH y ORP" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); border: 1px solid var(--gray-200); width: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 5: Dashboard Preview & Tecnologías -->
+  <section class="section-py bg-dark bg-pattern-grid">
+    <div class="container">
+      <div class="hero-grid" style="align-items: center; gap: 3rem;">
+        <div>
+          <span class="section-badge" style="background: rgba(14, 165, 233, 0.25); color: #38BDF8; border-color: rgba(14, 165, 233, 0.4);">Visibilidad Centralizada</span>
+          <h2 class="section-title" style="color: var(--white); font-size: 2.25rem;">
+            Dashboards Web & Alertas Móviles en Tiempo Real
+          </h2>
+          <p style="color: var(--gray-300); margin-bottom: 1.5rem;">
+            Supervise toda su planta desde cualquier dispositivo móvil o computador. Consulte gráficos de tendencias, configure umbrales de alerta y descargue reportes operativos en formato CSV o PDF.
+          </p>
+
+          <div class="product-specs" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 2rem;">
+            <div class="spec-row" style="border-color: rgba(255, 255, 255, 0.08);"><span class="spec-name" style="color: #38BDF8;">Conectividad de Campo</span><span class="spec-val" style="color: var(--gray-200);">LoRaWAN, 4-20 mA, RS485/Modbus, RTD/PT100</span></div>
+            <div class="spec-row" style="border-color: rgba(255, 255, 255, 0.08);"><span class="spec-name" style="color: #38BDF8;">Protocolos & Nube</span><span class="spec-val" style="color: var(--gray-200);">MQTT, Modbus TCP, REST API, Webhooks</span></div>
+            <div class="spec-row" style="border-color: rgba(255, 255, 255, 0.08);"><span class="spec-name" style="color: #38BDF8;">Integración de Planta</span><span class="spec-val" style="color: var(--gray-200);">SCADA, BMS, PLC Siemens/Schneider/Rockwell</span></div>
+            <div class="spec-row"><span class="spec-name" style="color: #38BDF8;">Canales de Alerta</span><span class="spec-val" style="color: var(--gray-200);">WhatsApp Bot, Correo Electrónico, SMS</span></div>
+          </div>
+
+          <a href="contacto.html?servicio=Dashboard-IoT" class="btn btn-primary">Solicitar Demo de Plataforma</a>
+        </div>
+
+        <div>
+          <img src="assets/img/automatizacion-iot/WEBSERVI-DASHBOARD-IOT.jpeg" alt="Dashboard IoT WebServi" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); border: 1px solid rgba(255, 255, 255, 0.15); width: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Metodología WIP en 4 Fases -->
+  <section class="section-py bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Metodología de Trabajo</span>
+        <h2 class="section-title">Implementación Técnica en Cuatro Fases</h2>
+        <p class="section-desc">Garantizamos proyectos ejecutados a tiempo, seguros y con soporte continuo en campo.</p>
+      </div>
+
+      <div class="divisions-grid" style="grid-template-columns: repeat(4, 1fr); gap: 1.25rem;">
+        
+        <div class="division-card">
+          <div class="division-body">
+            <span class="pipeline-num" style="margin-bottom: 0.75rem;">1</span>
+            <h4 style="font-size: 1.1rem; color: var(--dark-950); margin-bottom: 0.5rem;">Relevamiento</h4>
+            <p style="font-size: 0.85rem; color: var(--gray-600);">Levantamiento de variables críticas, rangos operativos, distancias, fuentes de alimentación y equipos existentes.</p>
+          </div>
+        </div>
+
+        <div class="division-card">
+          <div class="division-body">
+            <span class="pipeline-num" style="margin-bottom: 0.75rem;">2</span>
+            <h4 style="font-size: 1.1rem; color: var(--dark-950); margin-bottom: 0.5rem;">Diseño & Ingeniería</h4>
+            <p style="font-size: 0.85rem; color: var(--gray-600);">Selección de sensores, diagramas unifilares de tableros, cálculo de cobertura inalámbrica y arquitectura de software.</p>
+          </div>
+        </div>
+
+        <div class="division-card">
+          <div class="division-body">
+            <span class="pipeline-num" style="margin-bottom: 0.75rem;">3</span>
+            <h4 style="font-size: 1.1rem; color: var(--dark-950); margin-bottom: 0.5rem;">Implementación</h4>
+            <p style="font-size: 0.85rem; color: var(--gray-600);">Instalación electromecánica, conexionado de campo, configuración de gateways, dashboards y pruebas en carga.</p>
+          </div>
+        </div>
+
+        <div class="division-card">
+          <div class="division-body">
+            <span class="pipeline-num" style="margin-bottom: 0.75rem;">4</span>
+            <h4 style="font-size: 1.1rem; color: var(--dark-950); margin-bottom: 0.5rem;">Acompañamiento</h4>
+            <p style="font-size: 0.85rem; color: var(--gray-600);">Capacitación a operadores de planta, soporte post-instalación, calibración periódica y mantenimiento programado.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nota Técnica de Seguridad Obligatoria -->
+      <div class="security-box" style="margin-top: 3rem;">
+        <h5 style="color: var(--dark-950); margin-bottom: 0.35rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" style="color: var(--primary);"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+          Criterio Técnico de Seguridad Industrial
+        </h5>
+        <p style="font-size: 0.875rem; margin-bottom: 0; color: var(--gray-600);">
+          La telemetría LoRaWAN e IoT se implementa como capa superior para supervisión remota, visualización histórica y alertas tempranas. Las protecciones críticas, paradas de emergencia, válvulas de seguridad y enclavamientos deben permanecer siempre cableados de forma física, local e independiente conforme a las normas de seguridad del proceso.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-py bg-dark bg-pattern-grid">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="section-badge" style="background: rgba(14, 165, 233, 0.25); color: #38BDF8; border-color: rgba(14, 165, 233, 0.4);">Comience Hoy</span>
+      <h2 class="section-title" style="color: var(--white); font-size: 2.25rem; margin-bottom: 1rem;">
+        Hagamos Visible la Operación de su Planta
+      </h2>
+      <p style="color: var(--gray-300); margin-bottom: 2rem; font-size: 1.05rem;">
+        Identificamos las variables críticas de su proceso térmico o hídrico y diseñamos una solución escalable desde el sensor hasta el dashboard y las alertas automáticas.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contacto.html?servicio=Automatizacion-IoT" class="btn btn-primary btn-lg">Solicitar Evaluación Técnica</a>
+        <a href="https://wa.me/59170057895?text=Hola%20WIP,%20deseo%20evaluar%20automatizacion%20e%20IoT" target="_blank" class="btn btn-outline-white btn-lg">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/LOGO_WIP-01.png" alt="WIP Logo">
+          <p>
+            Soluciones integrales de ingeniería en tratamiento de aguas, filtración industrial crítica, calderas de vapor y automatización de procesos.
+          </p>
+          <span class="badge-norm">Normas NB 512 · Ley 1333 · ASME</span>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Tratamiento de Agua</h4>
+          <div class="footer-links">
+            <a href="tratamiento-agua.html#plantas">Plantas Potabilizadoras PPA</a>
+            <a href="tratamiento-agua.html#plantas">Plantas Efluentes PTAR / PDA-I</a>
+            <a href="tratamiento-agua.html#purificacion">Ósmosis Inversa Industrial</a>
+            <a href="tratamiento-agua.html#filtracion">Ablandadores de Agua</a>
+            <a href="tratamiento-agua.html#filtracion">Desmineralizadores SDA</a>
+            <a href="tratamiento-agua.html#desinfeccion">Desinfección UV & Ozono</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Calderas & Automatización</h4>
+          <div class="footer-links">
+            <a href="calderas-vapor.html#vapor">Calderas de Vapor Arauterm</a>
+            <a href="calderas-vapor.html#biomasa">Calderas de Biomasa</a>
+            <a href="calderas-vapor.html#fluido-termico">Calentadores de Fluido Térmico</a>
+            <a href="calderas-vapor.html#agua-caliente">Generadores de Agua Caliente</a>
+            <a href="automatizacion-iot.html#automatizacion">Automatización & Tableros</a>
+            <a href="automatizacion-iot.html#monitoreo">Monitoreo Industrial IoT</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Filtración, Montajes & Contacto</h4>
+          <div class="footer-links">
+            <a href="filtros-metalicos.html#aceite">Filtros de Aceite Serie P</a>
+            <a href="filtros-metalicos.html#combustible">Filtros de Combustible Explosion Proof</a>
+            <a href="servicios.html#vapor">Líneas de Vapor y Condensado</a>
+            <a href="servicios.html#soldadura">Soldaduras TIG, MIG, SMAW</a>
+            <span>Email: comercial@wipbolivia.com</span>
+            <a href="contacto.html" style="color: #FF5A65; font-weight: 600;">Solicitar Cotización Formal &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 WIP Soluciones Integrales. Todos los derechos reservados.</div>
+        <div>Automatización Industrial, Telemetría IoT & Montajes Especializados en Bolivia.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/59170057895?text=Hola%20WIP,%20solicito%20cotizaci%C3%B3n%20para%20Automatizacion%20e%20IoT" target="_blank" class="whatsapp-floating" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span>Cotizar por WhatsApp</span>
+  </a>
+
+  <!-- Technical Modal Placeholder -->
+  <div class="modal-backdrop" id="techModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="product-category" id="modalCategory">Línea Técnica</span>
+          <h3 id="modalTitle" style="font-size: 1.35rem; color: var(--dark-950); margin: 0;">Ficha Técnica</h3>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Cerrar modal">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBodyContent">
+        <!-- Dynamic content filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
