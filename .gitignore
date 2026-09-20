@@ -1,0 +1,22 @@
+# Archivos fuente pesados y locales no requeridos en el despliegue web
+13. SERVICIOS/
+2. TRATAMIENTO DE AGUA/
+3. FILTROS METALICOS/
+corporativo/
+FLOW-FERIA-WIP/
+*.docx
+*.pdf
+*.doc
+*.bmp
+wip-new.zip
+
+# Entorno de desarrollo
+.agents/
+.claude/
+agent/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.gemini/
+__pycache__/
