@@ -8,7 +8,7 @@ FLOW-FERIA-WIP/
 *.pdf
 *.doc
 *.bmp
-wip-new.zip
+*.zip
 
 # Entorno de desarrollo
 .agents/
