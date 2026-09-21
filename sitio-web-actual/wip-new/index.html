@@ -100,11 +100,23 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Ambient 3D Render Video -->
   <section class="hero bg-pattern-grid">
+    <div class="hero-video-bg">
+      <video id="heroVideo" autoplay loop muted playsinline poster="assets/img/hero-banner.jpg">
+        <source src="assets/video/hero-industrial.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-video-overlay"></div>
     <div class="hero-pattern"></div>
     <div class="hero-glow-1"></div>
     <div class="hero-glow-2"></div>
+    
+    <button class="hero-ambient-toggle" id="ambientToggleBtn" aria-label="Pausar o reproducir fondo ambiental">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span>Render 3D Activo</span>
+    </button>
+
     <div class="container hero-grid">
       
       <div class="hero-content">
@@ -243,7 +255,9 @@
         <!-- Div 1: Tratamiento de Aguas -->
         <div class="division-card">
           <div class="division-img-wrapper">
-            <img src="assets/img/products/ppa_planta_potabilizadora.png" alt="Tratamiento de Agua">
+            <video autoplay loop muted playsinline poster="assets/img/products/ppa_planta_potabilizadora.png">
+              <source src="assets/video/planta-ppa.mp4" type="video/mp4">
+            </video>
             <div class="division-overlay"></div>
             <span class="division-tag">División Hídrica</span>
           </div>
@@ -273,7 +287,9 @@
         <!-- Div 2: Filtros Metálicos -->
         <div class="division-card">
           <div class="division-img-wrapper">
-            <img src="assets/img/products/ACEITE_tanque_de_aceite.jpg" alt="Filtros Metálicos">
+            <video autoplay loop muted playsinline poster="assets/img/products/ACEITE_tanque_de_aceite.jpg">
+              <source src="assets/video/filtro-aceite.mp4" type="video/mp4">
+            </video>
             <div class="division-overlay"></div>
             <span class="division-tag">Filtración Crítica</span>
           </div>
@@ -303,7 +319,9 @@
         <!-- Div 3: Calderas & Vapor -->
         <div class="division-card">
           <div class="division-img-wrapper">
-            <img src="assets/img/calderas/CALDERA-VAPOR-ARAUTERM-01.jpg" alt="Calderas y Sistemas de Vapor Arauterm">
+            <video autoplay loop muted playsinline poster="assets/img/calderas/CALDERA-VAPOR-ARAUTERM-01.jpg">
+              <source src="assets/video/calderas-vapor.mp4" type="video/mp4">
+            </video>
             <div class="division-overlay"></div>
             <span class="division-tag" style="background: var(--primary);">
               <img src="assets/img/branding/logo-arauterm.png" alt="Arauterm" style="height: 12px; display: inline; filter: brightness(0) invert(1); vertical-align: middle; margin-right: 4px;"> Arauterm Bolivia
@@ -335,7 +353,9 @@
         <!-- Div 4: Automatización & IoT -->
         <div class="division-card">
           <div class="division-img-wrapper">
-            <img src="assets/img/automatizacion-iot/WEBSERVI-DASHBOARD-IOT.jpeg" alt="Automatización y Monitoreo Industrial IoT">
+            <video autoplay loop muted playsinline poster="assets/img/automatizacion-iot/WEBSERVI-DASHBOARD-IOT.jpeg">
+              <source src="assets/video/webservi-monitoreo.mp4" type="video/mp4">
+            </video>
             <div class="division-overlay"></div>
             <span class="division-tag" style="background: var(--accent-cyan);">Telemetría & Control</span>
           </div>
@@ -365,7 +385,9 @@
         <!-- Div 5: Servicios y Montajes -->
         <div class="division-card">
           <div class="division-img-wrapper">
-            <img src="assets/img/services/instalaciones_lineas_vapor_y_condensado_Distribuidor_de_vapor_10bar_presion_3ton.jpg" alt="Montajes Industriales">
+            <video autoplay loop muted playsinline poster="assets/img/services/instalaciones_lineas_vapor_y_condensado_Distribuidor_de_vapor_10bar_presion_3ton.jpg">
+              <source src="assets/video/redes-vapor.mp4" type="video/mp4">
+            </video>
             <div class="division-overlay"></div>
             <span class="division-tag">Montajes & Obra</span>
           </div>
@@ -408,7 +430,9 @@
         <!-- Item 1: PPA -->
         <div class="product-card">
           <div class="product-thumb">
-            <img src="assets/img/products/ppa_planta_potabilizadora.png" alt="Planta Potabilizadora PPA">
+            <video autoplay loop muted playsinline poster="assets/img/products/ppa_planta_potabilizadora.png">
+              <source src="assets/video/planta-ppa.mp4" type="video/mp4">
+            </video>
             <span class="product-badge">Norma NB 512</span>
           </div>
           <div class="product-body">
@@ -429,7 +453,9 @@
         <!-- Item 2: Ósmosis Inversa -->
         <div class="product-card">
           <div class="product-thumb">
-            <img src="assets/img/products/osmosis_inversa_industrial.jpg" alt="Ósmosis Inversa Industrial">
+            <video autoplay loop muted playsinline poster="assets/img/products/osmosis_inversa_industrial.jpg">
+              <source src="assets/video/osmosis-inversa.mp4" type="video/mp4">
+            </video>
             <span class="product-badge">Ultra Pureza</span>
           </div>
           <div class="product-body">
@@ -450,7 +476,9 @@
         <!-- Item 3: Filtro Aceite Serie P -->
         <div class="product-card">
           <div class="product-thumb">
-            <img src="assets/img/products/ACEITE_tanque_de_aceite_1.jpg" alt="Filtro para Aceite Serie P">
+            <video autoplay loop muted playsinline poster="assets/img/products/ACEITE_tanque_de_aceite_1.jpg">
+              <source src="assets/video/filtro-aceite.mp4" type="video/mp4">
+            </video>
             <span class="product-badge">Hasta 15 bar</span>
           </div>
           <div class="product-body">
@@ -471,7 +499,9 @@
         <!-- Item 4: Sistemas de Generación de Vapor Arauterm -->
         <div class="product-card">
           <div class="product-thumb">
-            <img src="assets/img/calderas/CALDERA-VAPOR-ARAUTERM-01.jpg" alt="Calderas de Vapor Arauterm">
+            <video autoplay loop muted playsinline poster="assets/img/calderas/CALDERA-VAPOR-ARAUTERM-01.jpg">
+              <source src="assets/video/calderas-vapor.mp4" type="video/mp4">
+            </video>
             <span class="product-badge" style="background: var(--primary);">Arauterm Bolivia</span>
           </div>
           <div class="product-body">
@@ -492,7 +522,9 @@
         <!-- Item 5: Monitoreo Industrial IoT -->
         <div class="product-card">
           <div class="product-thumb">
-            <img src="assets/img/automatizacion-iot/WEBSERVI-DASHBOARD-IOT.jpeg" alt="Monitoreo Industrial IoT">
+            <video autoplay loop muted playsinline poster="assets/img/automatizacion-iot/WEBSERVI-DASHBOARD-IOT.jpeg">
+              <source src="assets/video/webservi-monitoreo.mp4" type="video/mp4">
+            </video>
             <span class="product-badge" style="background: var(--accent-cyan);">Telemetría IoT</span>
           </div>
           <div class="product-body">

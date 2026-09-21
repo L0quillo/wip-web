@@ -1,6 +1,10 @@
 historico-web-fuentes-2022/
 lineamientos-y-recursos-corporativos/
 FLOW-FERIA-WIP/
+produccion-audiovisual-y-ferias/**/renders/
+produccion-audiovisual-y-ferias/**/entregables/
+produccion-audiovisual-y-ferias/**/archivo-control/
+produccion-audiovisual-y-ferias/**/control-calidad/
 *.docx
 *.pdf
 *.doc
@@ -18,3 +22,4 @@ Thumbs.db
 .gemini/
 __pycache__/
 tmp/
+respaldos-versiones-web/

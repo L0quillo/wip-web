@@ -10,12 +10,14 @@
 | :--- | :--- | :--- | :--- |
 | **`sitio-web-actual/`** | **Sitio Web Desplegable** | Contiene el código fuente en producción (`wip-new/`) y archivos de redirección (`redirect-root/`). | **Producción.** Se despliega directamente en cPanel (`public_html/` y `public_html/wip-new/`). |
 | **`lineamientos-y-recursos-corporativos/`** | **Identidad & Negocio B2B** | Identidad visual corporativa, paletas de color, manuales de marca, plantillas de propuestas comerciales B2B y modelos de cotización técnica. | **Material protegido.** Consultar para mantener tono de voz y estilo. |
-| **`FLOW-FERIA-WIP/`** | **Marketing & Audiovisual** | Videos corporativos, renders 3D de stands, banners y presentaciones para ferias industriales. | **Material audiovisual.** |
+| **`produccion-audiovisual-y-ferias/`** | **Marketing & Audiovisual** | Biblioteca neutral para proyectos de video, audio, animación, renders y materiales de feria, independiente del agente utilizado. | Cada campaña debe vivir en una subcarpeta fechada y conservar fuentes, trabajo, QA y entregables. |
 | **`documentacion-tecnica-y-propuestas/`** | **Documentación & Insumos** | Manifiestos de arquitectura, fichas técnicas de Arauterm/WebServi, diagramas de ingeniería y brochures de telemetría. | **Referencia técnica.** |
 | **`historico-web-fuentes-2022/`** | **Fuentes Históricas** | Fichas técnicas, planos, fotografías originales de obras de WIP (plantas PPA/PTAR, filtros serie P, montajes de vapor) y respaldo de la web 2022. | **Solo lectura.** Fuente original de imágenes y datos. |
+| **`respaldos-versiones-web/`** | **Historial Recuperable Web** | ZIP completos y fechados del estado anterior a cada cambio, acompañados por suma SHA-256 y registro. | Crear antes de editar `sitio-web-actual/`; no sobrescribir ni borrar automáticamente. |
 | **`.cpanel.yml`** | **Automatización CI/CD** | Script de despliegue automático de cPanel Git Version Control que copia los archivos a `public_html/`. | **Crítico para despliegue.** |
 | **`.agents/`, `.claude/`, `agent/`** | **Configuración de IA** | Skills, prompts y herramientas del sistema de agentes (Antigravity/Codex). | **Configuración de agentes.** Conservar. |
 | **`README.md`** | **Guía Maestra** | Explicación general para humanos y agentes de IA sobre cómo está organizado todo el proyecto. | **Documentación central.** |
+| **`INICIO-AQUI.md`** | **Entrada Portable** | Instrucción lista para entregar a cualquier agente y comprobaciones para uso directo desde Drive o copia completa. | Leer al recibir o trasladar la carpeta. |
 
 ---
 
@@ -23,22 +25,22 @@
 
 El sitio web está compuesto por **5 Divisiones Maestras de Ingeniería** estructuradas en páginas estáticas ultraligeras:
 
-1. **[`index.html`](file:///c:/Users/lucas/OneDrive/Documents/WIP/PAGINA%20WEB%20150822/wip-new/index.html)**: Home con Hero, barra de homologaciones (NB 512, Ley 1333, ASME), las 5 divisiones industriales, productos destacados, banner de continuidad operativa, formulario de contacto y footer de 4 columnas.
-2. **[`tratamiento-agua.html`](file:///c:/Users/lucas/OneDrive/Documents/WIP/PAGINA%20WEB%20150822/wip-new/tratamiento-agua.html)**: Plantas Potabilizadoras PPA, Efluentes PTAR/PDA-I, Ósmosis Inversa Industrial, Ablandadores y Desinfección UV/Ozono.
-3. **[`filtros-metalicos.html`](file:///c:/Users/lucas/OneDrive/Documents/WIP/PAGINA%20WEB%20150822/wip-new/filtros-metalicos.html)**: Filtros Serie P para aceite térmico (hasta 15 bar), combustibles Explosion Proof y filtros para polvo/gases.
-4. **[`calderas-vapor.html`](file:///c:/Users/lucas/OneDrive/Documents/WIP/PAGINA%20WEB%20150822/wip-new/calderas-vapor.html)** *(Nueva)*:
+1. **[`index.html`](sitio-web-actual/wip-new/index.html)**: Home con Hero, barra de homologaciones (NB 512, Ley 1333, ASME), las 5 divisiones industriales, productos destacados, banner de continuidad operativa, formulario de contacto y footer de 4 columnas.
+2. **[`tratamiento-agua.html`](sitio-web-actual/wip-new/tratamiento-agua.html)**: Plantas Potabilizadoras PPA, Efluentes PTAR/PDA-I, Ósmosis Inversa Industrial, Ablandadores y Desinfección UV/Ozono.
+3. **[`filtros-metalicos.html`](sitio-web-actual/wip-new/filtros-metalicos.html)**: Filtros Serie P para aceite térmico (hasta 15 bar), combustibles Explosion Proof y filtros para polvo/gases.
+4. **[`calderas-vapor.html`](sitio-web-actual/wip-new/calderas-vapor.html)** *(Nueva)*:
    - Badge oficial: *"Representantes de Arauterm en Bolivia"*.
    - 4 Familias de Equipos Arauterm: Calderas de Vapor Pirotubulares, Calderas a Biomasa, Calentadores de Fluido Térmico y Generadores de Agua Caliente.
    - Modales interactivos con especificaciones de capacidad, presión y combustible.
    - Galería de montajes reales de WIP (cabezales de vapor a 10 bar / 3 ton/h, manifolds y trampeo).
-5. **[`automatizacion-iot.html`](file:///c:/Users/lucas/OneDrive/Documents/WIP/PAGINA%20WEB%20150822/wip-new/automatizacion-iot.html)** *(Nueva)*:
+5. **[`automatizacion-iot.html`](sitio-web-actual/wip-new/automatizacion-iot.html)** *(Nueva)*:
    - 3 Pilares: Telemetría Cloud WebServi, Tableros Eléctricos y Eficiencia Energética.
    - Diagrama de Arquitectura de Datos en 5 Fases (Sensores -> Edge Gateways -> Conectividad Industrial -> Dashboards Cloud -> Alertas WhatsApp/Telegram).
    - Matriz de 6 Variables Críticas Monitoreadas.
    - Protocolo de seguridad industrial (monitoreo en la nube / actuación crítica en hardware local).
-6. **[`servicios.html`](file:///c:/Users/lucas/OneDrive/Documents/WIP/PAGINA%20WEB%20150822/wip-new/servicios.html)**: Ingeniería de montajes mecánicos, líneas de vapor/condensado, gas natural y aislamiento refractario.
-7. **[`nosotros.html`](file:///c:/Users/lucas/OneDrive/Documents/WIP/PAGINA%20WEB%20150822/wip-new/nosotros.html)**: Identidad, valores, experiencia y cobertura en Bolivia.
-8. **[`contacto.html`](file:///c:/Users/lucas/OneDrive/Documents/WIP/PAGINA%20WEB%20150822/wip-new/contacto.html)**: Formulario dinámico B2B con preselección inteligente por URL (`?servicio=`), canales de WhatsApp directo y QR.
+6. **[`servicios.html`](sitio-web-actual/wip-new/servicios.html)**: Ingeniería de montajes mecánicos, líneas de vapor/condensado, gas natural y aislamiento refractario.
+7. **[`nosotros.html`](sitio-web-actual/wip-new/nosotros.html)**: Identidad, valores, experiencia y cobertura en Bolivia.
+8. **[`contacto.html`](sitio-web-actual/wip-new/contacto.html)**: Formulario dinámico B2B con preselección inteligente por URL (`?servicio=`), canales de WhatsApp directo y QR.
 
 ---
 
@@ -56,6 +58,16 @@ El sitio web está compuesto por **5 Divisiones Maestras de Ingeniería** estruc
 
 ## ⚙️ 4. Flujo Git y Despliegue en Servidor (cPanel / WHM)
 
+### Respaldo obligatorio antes de editar
+
+Antes de modificar `sitio-web-actual/`, ejecutar:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/crear-respaldo-web.ps1 -Motivo "descripcion-breve"
+```
+
+El proceso debe terminar correctamente y generar un ZIP, un `.sha256` y un `.txt` dentro de `respaldos-versiones-web/`. Las tareas de solo lectura no generan respaldo. El ZIP de respaldo no es un sustituto del control de versiones ni debe utilizarse directamente como paquete de despliegue.
+
 ### Repositorio Central
 - **GitHub:** `https://github.com/L0quillo/wip-web.git`
 - **Rama principal de producción:** `main`
@@ -72,13 +84,13 @@ El sitio web está compuesto por **5 Divisiones Maestras de Ingeniería** estruc
     tasks:
       - export DEPLOYPATH=/home/wipbolivia/public_html
       - /bin/mkdir -p $DEPLOYPATH/wip-new
-      - /bin/cp -R -f wip-new/. $DEPLOYPATH/wip-new/
-      - /bin/cp -R -f wip-new/. $DEPLOYPATH/
+      - /bin/cp -R -f sitio-web-actual/wip-new/. $DEPLOYPATH/wip-new/
+      - /bin/cp -R -f sitio-web-actual/wip-new/. $DEPLOYPATH/
   ```
 
 ### Comando rápido para actualizar producción desde la Terminal de WHM:
 ```bash
-cd /home/wipbolivia/repositories/wip-web && git pull origin main && cp -R -f wip-new/. /home/wipbolivia/public_html/wip-new/ && cp -R -f wip-new/. /home/wipbolivia/public_html/
+cd /home/wipbolivia/repositories/wip-web && git pull origin main && cp -R -f sitio-web-actual/wip-new/. /home/wipbolivia/public_html/wip-new/ && cp -R -f sitio-web-actual/wip-new/. /home/wipbolivia/public_html/
 ```
 
 ---
@@ -91,6 +103,15 @@ cd /home/wipbolivia/repositories/wip-web && git pull origin main && cp -R -f wip
 - **Interacción y Formularios:** `main.js` actualizado para capturar parámetros GET (`?servicio=`) y preseleccionar la opción de cotización.
 - **Optimización de Assets:** Inclusión de imágenes oficiales Arauterm y nuevo Dashboard WebServi en alta resolución (`WEBSERVI-DASHBOARD-IOT.jpeg`).
 - **Seguridad & Despliegue:** Creación de ramas y tags de respaldo en Git, sincronización con GitHub y optimización de `.cpanel.yml` para despliegue simultáneo en raíz y subcarpeta.
+
+### [Organización compartida] — Septiembre 2026
+- Se consolidó la web productiva bajo `sitio-web-actual/` y se corrigieron referencias de despliegue antiguas.
+- El proyecto específico `FLOW-FERIA-WIP` pasó a `produccion-audiovisual-y-ferias/video-feria-google-flow-2026/` para separar la biblioteca corporativa de la herramienta usada.
+- El video de feria quedó documentado con 34 clips normalizados, dos entregables y archivo de control.
+- Se incorporó `GOBERNANZA-DE-ARCHIVOS.md` para continuidad entre Antigravity, Codex, Claude y otros agentes.
+- Se creó `respaldos-versiones-web/` y un procedimiento obligatorio de copia completa antes de cualquier edición de la web.
+- Se añadió `CONTINUIDAD-DEL-PROYECTO.md`, se reemplazaron rutas locales absolutas por rutas relativas y se dejó el repositorio preparado para cambiar de nombre o ubicación.
+- Se añadió `INICIO-AQUI.md` y se documentó el uso mediante Drive/OneDrive, incluyendo archivos ignorados por Git y carpetas ocultas.
 
 ### [Fase 1] — Versión Base: Tratamiento de Agua, Filtros y Montajes
 - Estructuración inicial de `wip-new/` con páginas de Tratamiento de Agua, Filtros Metálicos, Servicios de Montaje, Nosotros y Contacto con PHP mailer.

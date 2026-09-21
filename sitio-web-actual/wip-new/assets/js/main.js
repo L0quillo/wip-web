@@ -199,4 +199,105 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+
+  // 7. Ambient Video Background Control
+  const heroVideo = document.getElementById('heroVideo');
+  const ambientToggleBtn = document.getElementById('ambientToggleBtn');
+
+  if (ambientToggleBtn && heroVideo) {
+    ambientToggleBtn.addEventListener('click', () => {
+      if (heroVideo.paused) {
+        heroVideo.play().then(() => {
+          ambientToggleBtn.innerHTML = `
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Render 3D Activo</span>
+          `;
+        }).catch(() => {});
+      } else {
+        heroVideo.pause();
+        ambientToggleBtn.innerHTML = `
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Pausar Render</span>
+        `;
+      }
+    });
+  }
+
+  // 8. Robust Video Fallback Engine (Static Image on Error or Low-Bandwidth)
+  function convertVideoToStaticImage(video) {
+    if (!video || video.dataset.fallbackApplied) return;
+    video.dataset.fallbackApplied = 'true';
+
+    const posterSrc = video.getAttribute('poster');
+    if (!posterSrc) return;
+
+    const img = document.createElement('img');
+    img.src = posterSrc;
+    img.alt = video.getAttribute('aria-label') || video.getAttribute('title') || 'Equipo Industrial WIP';
+    if (video.className) img.className = video.className;
+    if (video.getAttribute('style')) img.style.cssText = video.getAttribute('style');
+
+    if (!img.style.width) img.style.width = '100%';
+    if (!img.style.height) img.style.height = '100%';
+    if (!img.style.objectFit) img.style.objectFit = 'cover';
+    if (!img.style.display) img.style.display = 'block';
+
+    if (video.parentNode) {
+      video.parentNode.replaceChild(img, video);
+    }
+  }
+
+  // Check network speed & data-saver mode
+  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  const isSlowConnection = connection && (connection.saveData === true || connection.effectiveType === 'slow-2g' || connection.effectiveType === '2g');
+
+  const allVideos = document.querySelectorAll('video');
+
+  if (isSlowConnection) {
+    // Under very slow connections or Data-Saver, immediately swap all videos for high-performance static images
+    allVideos.forEach(v => convertVideoToStaticImage(v));
+  } else {
+    // Attach error listeners to guarantee fallback if any video stream fails
+    allVideos.forEach(video => {
+      video.addEventListener('error', () => {
+        convertVideoToStaticImage(video);
+      }, true);
+
+      const sources = video.querySelectorAll('source');
+      sources.forEach(src => {
+        src.addEventListener('error', () => {
+          convertVideoToStaticImage(video);
+        });
+      });
+    });
+
+    // 9. Lazy Playback & Resource Management with IntersectionObserver
+    if ('IntersectionObserver' in window) {
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const video = entry.target;
+          if (entry.isIntersecting) {
+            if (video.paused && video.getAttribute('autoplay') !== null) {
+              const playPromise = video.play();
+              if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                  // If autoplay blocked (e.g. low power mode), poster remains visible naturally
+                });
+              }
+            }
+          } else {
+            if (!video.paused) {
+              video.pause();
+            }
+          }
+        });
+      }, { rootMargin: '80px 0px', threshold: 0.1 });
+
+      allVideos.forEach(v => {
+        if (v.getAttribute('autoplay') !== null) {
+          videoObserver.observe(v);
+        }
+      });
+    }
+  }
 });
