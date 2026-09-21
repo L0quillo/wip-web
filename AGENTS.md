@@ -10,13 +10,13 @@
 
 ## Mapa del Proyecto
 - **`wip-new/`**: Sitio web desplegable en producción con 5 divisiones (Tratamiento de Agua, Filtros Metálicos, Calderas & Vapor Arauterm, Automatización & IoT WebServi, Servicios & Montajes). HTML5 nativo, CSS3, JS vainilla y PHP.
-- **`PROPUESTA-AMPLIACION-WEB-ANTIGRAVITY/`**: Manifiestos de arquitectura, fichas técnicas y propuestas de contenido.
-- **`corporativo/`**: Identidad visual corporativa, documentos comerciales y plantillas de propuestas B2B.
-- **`2. TRATAMIENTO DE AGUA/`, `3. FILTROS METALICOS/`, `13. SERVICIOS/`**: Archivos y fotografías históricas originales de productos y obras de WIP.
-- **`FLOW-FERIA-WIP/`**: Material gráfico para ferias industriales y eventos.
-- **`datos adicionales a reacomodar e interpretar/`**: Banco de insumos técnicos y diagramas aportados por ingeniería.
+- **`corporativo/`**: Identidad visual corporativa, documentos comerciales, manuales de marca y plantillas de propuestas B2B.
+- **`FLOW-FERIA-WIP/`**: Material gráfico, banners, renders 3D y presentaciones para ferias industriales y eventos.
+- **`documentacion-y-propuestas/`**: Manifiestos de arquitectura, fichas técnicas de Arauterm/WebServi e insumos técnicos de ingeniería.
+- **`historico-web-fuentes-2022/`**: Archivos y fotografías históricas originales de productos y obras de WIP (2022) y respaldo de la versión previa.
 - **`redirect-root/`**: Archivos de redirección para la raíz del hosting hacia `/wip-new/index.html`.
 - **`.cpanel.yml`**: Configuración de despliegue automático de cPanel Git Version Control.
+- **`README.md`**: Guía maestra para humanos e IA sobre cómo está organizado todo el espacio.
 
 ## Reglas de Marca y Comerciales
 - **Identidad:** Paleta `#C1303A` (Rojo Industrial) y `#244088` (Azul Ingeniería). Mantener estética técnica y sobria.

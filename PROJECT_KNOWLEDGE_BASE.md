@@ -9,17 +9,14 @@
 | Carpeta / Archivo | Tipo | Descripción y Propósito | Estado / Reglas |
 | :--- | :--- | :--- | :--- |
 | **`wip-new/`** | **Sitio Web Desplegable** | Contiene el código fuente en producción del sitio web (HTML5 nativo, CSS3, JS vainilla, PHP para formulario y assets optimizados). | **Producción.** Se despliega directamente en cPanel (`public_html/` y `public_html/wip-new/`). |
-| **`PROPUESTA-AMPLIACION-WEB-ANTIGRAVITY/`** | **Documentación & Especificación** | Manifiestos de arquitectura, fichas técnicas de Arauterm y WebServi, propuestas de contenido y wireframes textuales de las nuevas divisiones. | **Referencia técnica.** No borrar. |
 | **`corporativo/`** | **Identidad & Negocio B2B** | Identidad visual corporativa, paletas de color, manuales de marca, plantillas de propuestas comerciales B2B y modelos de cotización técnica. | **Material protegido.** Consultar para mantener tono de voz y estilo. |
-| **`2. TRATAMIENTO DE AGUA/`** | **Fuente Histórica** | Fichas técnicas, diagramas, manuales y fotografías originales de plantas PPA, PTAR, PDA-I, ósmosis y filtros multimedia. | **Solo lectura.** Fuente original de imágenes y datos de tratamiento. |
-| **`3. FILTROS METALICOS/`** | **Fuente Histórica** | Planos, tablas de presiones y catálogos de filtros metálicos para aceite (Serie P), combustibles y recipientes a presión. | **Solo lectura.** Fuente original de la división de filtración. |
-| **`13. SERVICIOS/`** | **Fuente Histórica** | Fotografías reales de montajes mecánicos, cabezales de vapor a 10 bar, soldaduras homologadas y refractarios. | **Solo lectura.** Banco de fotos de obras y montajes de WIP. |
-| **`FLOW-FERIA-WIP/`** | **Marketing & Eventos** | Material gráfico, banners y presentaciones preparadas para ferias industriales y eventos comerciales de WIP. | **Material de apoyo.** |
-| **`datos adicionales a reacomodar e interpretar/`** | **Assets de Entrada** | Diagramas de arquitectura IoT, fotos de sensores de presión/calidad de agua y dashboards en bruto aportados por los ingenieros. | **Banco de insumos.** |
+| **`FLOW-FERIA-WIP/`** | **Marketing & Eventos** | Material gráfico, banners, renders 3D y presentaciones preparadas para ferias industriales y eventos de WIP. | **Material de apoyo.** |
+| **`documentacion-y-propuestas/`** | **Documentación & Insumos** | Manifiestos de arquitectura, fichas técnicas de Arauterm/WebServi, diagramas de ingeniería y brochures de telemetría. | **Referencia técnica.** |
+| **`historico-web-fuentes-2022/`** | **Fuentes Históricas** | Fichas técnicas, planos, fotografías originales de obras de WIP (plantas PPA/PTAR, filtros serie P, montajes de vapor) y respaldo de la web 2022. | **Solo lectura.** Fuente original de imágenes y datos. |
 | **`redirect-root/`** | **Configuración Hosting** | Archivos `index.html` e `index.php` de redirección rápida hacia `/wip-new/index.html` para la raíz del hosting. | **Configuración opcional.** |
 | **`.cpanel.yml`** | **Automatización CI/CD** | Script de despliegue automático de cPanel Git Version Control que copia los archivos a `public_html/`. | **Crítico para despliegue.** |
 | **`.agents/`, `.claude/`, `agent/`** | **Configuración de IA** | Skills, prompts y herramientas del sistema de agentes (Antigravity/Codex). | **Configuración de agentes.** Conservar. |
-| **`wip-backup-pre-divisiones.zip`** | **Respaldo Físico** | Copia ZIP de la versión anterior a la incorporación de Calderas y Automatización. | **Copia de seguridad.** |
+| **`README.md`** | **Guía Maestra** | Explicación general para humanos y agentes de IA sobre cómo está organizado todo el proyecto. | **Documentación central.** |
 
 ---
 
