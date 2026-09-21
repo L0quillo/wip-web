@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/wipbolivia/public_html
     - /bin/mkdir -p $DEPLOYPATH/wip-new
-    - /bin/cp -R -f wip-new/. $DEPLOYPATH/wip-new/
-    - /bin/cp -R -f wip-new/. $DEPLOYPATH/
+    - /bin/cp -R -f sitio-web-actual/wip-new/. $DEPLOYPATH/wip-new/
+    - /bin/cp -R -f sitio-web-actual/wip-new/. $DEPLOYPATH/

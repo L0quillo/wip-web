@@ -9,12 +9,11 @@
 - Conservar `skills-lock.json`, `.claude/skills/` y `agent/skills/`.
 
 ## Mapa del Proyecto
-- **`wip-new/`**: Sitio web desplegable en producción con 5 divisiones (Tratamiento de Agua, Filtros Metálicos, Calderas & Vapor Arauterm, Automatización & IoT WebServi, Servicios & Montajes). HTML5 nativo, CSS3, JS vainilla y PHP.
-- **`corporativo/`**: Identidad visual corporativa, documentos comerciales, manuales de marca y plantillas de propuestas B2B.
-- **`FLOW-FERIA-WIP/`**: Material gráfico, banners, renders 3D y presentaciones para ferias industriales y eventos.
-- **`documentacion-y-propuestas/`**: Manifiestos de arquitectura, fichas técnicas de Arauterm/WebServi e insumos técnicos de ingeniería.
+- **`sitio-web-actual/`**: Contiene el sitio web desplegable en producción (`wip-new/` con sus 5 divisiones) y archivos de redirección (`redirect-root/`).
+- **`lineamientos-y-recursos-corporativos/`**: Identidad visual corporativa, documentos comerciales, manuales de marca y plantillas de propuestas B2B.
+- **`FLOW-FERIA-WIP/`**: Videos corporativos, banners, renders 3D y catálogo audiovisual para ferias industriales.
+- **`documentacion-tecnica-y-propuestas/`**: Manifiestos de arquitectura, fichas técnicas de Arauterm/WebServi e insumos técnicos de ingeniería.
 - **`historico-web-fuentes-2022/`**: Archivos y fotografías históricas originales de productos y obras de WIP (2022) y respaldo de la versión previa.
-- **`redirect-root/`**: Archivos de redirección para la raíz del hosting hacia `/wip-new/index.html`.
 - **`.cpanel.yml`**: Configuración de despliegue automático de cPanel Git Version Control.
 - **`README.md`**: Guía maestra para humanos e IA sobre cómo está organizado todo el espacio.
 

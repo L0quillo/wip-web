@@ -8,12 +8,11 @@
 
 | Carpeta / Archivo | Tipo | Descripción y Propósito | Estado / Reglas |
 | :--- | :--- | :--- | :--- |
-| **`wip-new/`** | **Sitio Web Desplegable** | Contiene el código fuente en producción del sitio web (HTML5 nativo, CSS3, JS vainilla, PHP para formulario y assets optimizados). | **Producción.** Se despliega directamente en cPanel (`public_html/` y `public_html/wip-new/`). |
-| **`corporativo/`** | **Identidad & Negocio B2B** | Identidad visual corporativa, paletas de color, manuales de marca, plantillas de propuestas comerciales B2B y modelos de cotización técnica. | **Material protegido.** Consultar para mantener tono de voz y estilo. |
-| **`FLOW-FERIA-WIP/`** | **Marketing & Eventos** | Material gráfico, banners, renders 3D y presentaciones preparadas para ferias industriales y eventos de WIP. | **Material de apoyo.** |
-| **`documentacion-y-propuestas/`** | **Documentación & Insumos** | Manifiestos de arquitectura, fichas técnicas de Arauterm/WebServi, diagramas de ingeniería y brochures de telemetría. | **Referencia técnica.** |
+| **`sitio-web-actual/`** | **Sitio Web Desplegable** | Contiene el código fuente en producción (`wip-new/`) y archivos de redirección (`redirect-root/`). | **Producción.** Se despliega directamente en cPanel (`public_html/` y `public_html/wip-new/`). |
+| **`lineamientos-y-recursos-corporativos/`** | **Identidad & Negocio B2B** | Identidad visual corporativa, paletas de color, manuales de marca, plantillas de propuestas comerciales B2B y modelos de cotización técnica. | **Material protegido.** Consultar para mantener tono de voz y estilo. |
+| **`FLOW-FERIA-WIP/`** | **Marketing & Audiovisual** | Videos corporativos, renders 3D de stands, banners y presentaciones para ferias industriales. | **Material audiovisual.** |
+| **`documentacion-tecnica-y-propuestas/`** | **Documentación & Insumos** | Manifiestos de arquitectura, fichas técnicas de Arauterm/WebServi, diagramas de ingeniería y brochures de telemetría. | **Referencia técnica.** |
 | **`historico-web-fuentes-2022/`** | **Fuentes Históricas** | Fichas técnicas, planos, fotografías originales de obras de WIP (plantas PPA/PTAR, filtros serie P, montajes de vapor) y respaldo de la web 2022. | **Solo lectura.** Fuente original de imágenes y datos. |
-| **`redirect-root/`** | **Configuración Hosting** | Archivos `index.html` e `index.php` de redirección rápida hacia `/wip-new/index.html` para la raíz del hosting. | **Configuración opcional.** |
 | **`.cpanel.yml`** | **Automatización CI/CD** | Script de despliegue automático de cPanel Git Version Control que copia los archivos a `public_html/`. | **Crítico para despliegue.** |
 | **`.agents/`, `.claude/`, `agent/`** | **Configuración de IA** | Skills, prompts y herramientas del sistema de agentes (Antigravity/Codex). | **Configuración de agentes.** Conservar. |
 | **`README.md`** | **Guía Maestra** | Explicación general para humanos y agentes de IA sobre cómo está organizado todo el proyecto. | **Documentación central.** |
