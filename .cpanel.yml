@@ -2,5 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/wipbolivia/public_html
-    - /bin/cp redirect-root/index.html $DEPLOYPATH/index.html 2>/dev/null || true
-    - /bin/cp -R wip-new $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/wip-new
+    - /bin/cp -R -f wip-new/. $DEPLOYPATH/wip-new/
+    - /bin/cp -R -f wip-new/. $DEPLOYPATH/
